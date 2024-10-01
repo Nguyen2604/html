@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng văn bản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Định dạng phông chữ */
+        }
+        h1 {
+            text-align: center;
+            color: #006600; /* Màu xanh lá mạ */
+        }
+        /* Định dạng cho công thức hóa học và phương trình bậc hai */
+        .formula, .equation {
+            color: #FF0000; /* Màu đỏ */
+            text-align: center;
+        }
+        /* Định dạng cho đoạn code vòng lặp for */
+        .code {
+            background-color: #CCCCCC; /* Nền xám */
+            color: #0000CC; /* Màu xanh dương đậm */
+            padding: 10px;
+            margin: 20px;
+            font-family: "Courier New", Courier, monospace; /* Font monospace để hiển thị code */
+            border-radius: 5px;
+            white-space: pre; /* Giữ định dạng của khoảng trắng */
+            padding-left: 20px; /* Căn lề trái cho đoạn code */
+        }
+        /* Canh giữa tiêu đề hóa học */
+        .chemical-header {
+            display: flex; /* Sử dụng flexbox để căn hàng */
+            align-items: center; /* Canh giữa theo chiều dọc */
+        }
+        /* Canh giữa tiêu đề toán học */
+        .math-header {
+            display: flex; /* Sử dụng flexbox để căn hàng */
+            align-items: center; /* Canh giữa theo chiều dọc */
+            margin: 10px 0; /* Khoảng cách phía trên và dưới */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Định dạng Văn Bản</h1>
+
+    <!-- Tiêu đề hóa học -->
+    <h2 class="chemical-header">
+        <u>Hóa học</u>:
+        <span style="margin-left: 10px;"></span>
+        <i>Nước</i>: <font color="#FF0000">H<sub>2</sub>O</font>
+        <span style="margin-left: 30px;"></span>
+        <i>Axit sunfuric</i>: <font color="#FF0000">H<sub>2</sub>SO<sub>4</sub></font>
+    </h2>
+
+    <!-- Tiêu đề toán học -->
+    <h2 class="math-header">
+        <u>Toán học</u>: <i>Phương trình bậc 2</i>:
+        <span style="margin-left: 10px;"></span>
+        <font color="#FF0000">ax<sup>2</sup> + bx + c = 0</font>
+    </h2>
+
+    <!-- Đoạn code vòng lặp for -->
+    <h2><u>Tin học</u>: <i>Vòng lặp for</i></h2>
+    <pre class="code">
+        for i = 0 to 10
+            tong = tong + 1
+        next
+    </pre>
+
+</body>
+</html>
